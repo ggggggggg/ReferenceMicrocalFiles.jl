@@ -22,6 +22,4 @@ add_ref_file("tupac_fe_emission", "20150730_50mM_irontris_100ps_xes_chan1.ljh", 
 add_ref_file("good_mnka_mystery", "20150707_D_chan13.ljh", "20150707_C_chan13.noi", [5898.801, 6490.59],
 "mn emission measurement with xsi in mystery(?), measured by Kelsey, 2.5 eV predicted, 2.44 eV achieved")
 
-# package code goes here
-
 end # module

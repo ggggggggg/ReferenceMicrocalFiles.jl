@@ -3,5 +3,9 @@ using Base.Test
 
 # write your own tests here
 @test 1 == 1
-@test isfile(ReferenceMicrocalFiles.dict["tupac_calibronium"].filename)
-@test isfile(ReferenceMicrocalFiles.dict["tupac_fe_emission"].noise_filename)
+for (k,v) in ReferenceMicrocalFiles.dict
+  @test isfile(v.filename)
+  @test isfile(v.noise_filename) || v.noise_filename == ""
+  @test !isempty(v.note)
+  @test !isempty(v.line_energies_ev)
+end

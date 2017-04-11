@@ -3,10 +3,10 @@ module ReferenceMicrocalFiles
 const ljhdir = normpath(joinpath( dirname(@__FILE__), "../ljh"))
 
 type ReferenceMicrocalFile
-	filename::AbstractString
+	filename::String
 	noise_filename::AbstractString
 	line_energies_ev::Vector{Float64}
-	note::ASCIIString
+	note::String
 end
 const dict = Dict()
 function add_ref_file(key, fname, noisename, line_energies_ev, note)

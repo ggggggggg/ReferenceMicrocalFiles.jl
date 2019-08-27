@@ -2,7 +2,7 @@ module ReferenceMicrocalFiles
 
 const ljhdir = normpath(joinpath( dirname(@__FILE__), "../ljh"))
 
-type ReferenceMicrocalFile
+mutable struct ReferenceMicrocalFile
 	filename::String
 	noise_filename::AbstractString
 	line_energies_ev::Vector{Float64}
